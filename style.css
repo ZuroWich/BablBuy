@@ -1,0 +1,205 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.admin-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.form-container input[type="text"],
+.form-container select {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+#refTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#refTable th,
+#refTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#refTable th {
+    background-color: #f2f2f2;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.small-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-container {
+    float: left;
+}
+
+.button-container2 {
+    float: right;
+}
+
+/* style.css */
+
+/* Стили для кнопок Edit, Delete и + */
+.button-container button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#addBtn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button-container2 button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button-container button:hover,
+.button-container2 button:hover {
+    opacity: 0.8;
+}
+/* style.css */
+
+.form-container input[type="text"],
+.form-container select,
+#submitFormBtn {
+    padding: 5px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+
+#formDiscount  {
+    width: 75px; /* Устанавливаем фиксированную ширину для полей Discount и Invites */
+}  
+
+
+#submitFormBtn {
+    width: 75px;
+    border-radius: 4px;
+}
+
+/* style.css */
+
+#formInvites {
+    width: 30px; /* Установим ширину поля Inv */
+}
+
+#formId {
+    width: 40px; /* Установим ширину поля ID */
+}

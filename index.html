@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter your password:</h1>
+        <input type="password" id="password" placeholder="Enter password">
+        <button id="loginBtn">Login</button>
+    </div>
+
+    <div id="adminContainer" style="display:none;">
+        <div id="formContainer" class="form-container" style="display: none;">
+            <input type="text" id="formId" placeholder="ID" style="display: none;">
+            <input type="text" id="formDiscordId" placeholder="Discord ID">
+            <select id="formDiscount">
+                <option value="">Disc</option>
+                <option value="0">0%</option>
+                <option value="1">1%</option>
+                <option value="2">2%</option>
+                <option value="3">3%</option>
+                <option value="4">4%</option>
+                <option value="5">5%</option>
+                <option value="6">6%</option>
+                <option value="7">7%</option>
+                <option value="8">8%</option>
+                <option value="9">9%</option>
+                <option value="10">10%</option>
+            </select>
+            <input type="text" id="formDiscordLink" placeholder="Link">
+            <input type="number" id="formInvites" placeholder="Inv" style="display: none;">
+            <button id="submitFormBtn">Submit</button>
+        </div>
+     
+        <div class="table-container">
+            <div class="button-container">
+                <button id="changeBtn" style="float: left;">Edit</button>
+                <button id="removeBtn" style="float: left;">Del</button>
+            </div>
+            <button id="addBtn" style="float: right;">+</button>
+            <table id="refTable">
+                <thead>
+                    <tr>
+                        
+                        <th>ID</th>
+                        <th>Discord ID</th>
+                        <th>Discount</th>
+                        <th>Invites</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Referrals will be added here -->
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button id="prevPageBtn" class="small-button">&lt;</button>
+                <button id="nextPageBtn" class="small-button">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
